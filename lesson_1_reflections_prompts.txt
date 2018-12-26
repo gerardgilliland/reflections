@@ -130,6 +130,9 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 
+Same problem in Lesson 3 Quiz 5
+No commits yet vs Initial commit
+
 
 
 
