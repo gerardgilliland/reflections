@@ -1,0 +1,141 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+I used Notepad++ > Plugins > Compare and it was easy.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+Mainly, I could quit wasting time making backups of full files and trying to name them meaningfully.
+It could keep me from making previous mistakes again.
+
+I am stopping as Lesson 1 concept 11
+https://classroom.udacity.com/courses/ud775/lessons/2980038599/concepts/29607789360923
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+Pro - you can commit for each feature change / add
+Con -- can't think of any.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+Because they are tied together.
+
+How can you use the commands git log and git diff to view the history of files?
+diff --git fileA fileB
+log 
+
+How might using version control make you more confident to make changes that could break something?
+right now I don't think I need to find out how to back out of changes
+
+Now that you have your workspace set up, what do you want to try using Git for?
+Use the correct process to make changes on my github site.
+
+
+this eventualy works:
+alias npp="/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe"
+
+this works:
+start notepad++ 
+start notepad++ <filename>
+alias npp='start notepad++'
+npp <filename>
+
+I suspect you could do the same with Sublime
+
+I would have liked to see a picture with 
+MyMessyFolder box
+arrow with add label pointing to CommittFolder box
+arrow with committ label pointing to GitHub box
+Maybe I don't have this right but that's because I haven't seen it yet.
+
+To clone an app
+enter "git clone" plus the github url: https://....
+
+Owner@DESKTOP-3D272O8 MINGW64 ~/pappu-pakia/.git (GIT_DIR!)
+$ git checkout 708bcce690e5faa5739bd471507c102ea16b77f7
+fatal: this operation must be run in a work tree
+
+gerardg ~/pappu-pakia/.git (GIT_DIR!)
+$ git checkout 708bcce690e5faa5739bd471507c102ea16b77f7
+fatal: this operation must be run in a work tree
+
+$ cd ..
+
+gerardg ~/pappu-pakia ((708bcce...))
+$ git checkout 708bcce690e5faa5739bd471507c102ea16b77f7
+
+Owner@DESKTOP-3D272O8 MINGW64 ~/pappu-pakia ((708bcce...))
+$ git log
+commit 708bcce690e5faa5739bd471507c102ea16b77f7 (HEAD)
+Author: Rishabh <rishabh.pugalia@gmail.com>
+Date:   Mon Dec 31 23:18:16 2012 +0530
+
+    pressing down arrow wont cause scroll down anymore
+
+commit 547f4171a82ec6429d002c1acef357aec41d3f17
+Author: Rishabh Pugalia <rishabh.pugalia@gmail.com>
+Date:   Fri Dec 28 16:27:21 2012 +0530
+
+    refactoring collision detection
+
+commit 71d52709ddc4066e7a79a1d0a412e43429a0cdeb
+Author: Rishabh <rishabh.pugalia@gmail.com>
+Date:   Thu Dec 27 11:17:10 2012 +0530
+
+    removing old readme
+
+commit 7c81b8021ec16c5c7b240220314d01200957d605
+Author: Rishabh <rishabh.pugalia@gmail.com>
+Date:   Thu Dec 27 11:11:08 2012 +0530
+
+
+git diff 746f762e38b5bbb7d0b837464ef6ec3f8ee5bf91 003c8c197cd3b1e5b28b58f53ee14d7ebaa9bb3a
+
+------------
+
+git init
+git log
+
+fatal: your current branch 'master' does not have any commits yet
+vs
+fatal: bad default revision 'HEAD' 
+ie. do you need to update your video?
+
+cbuckey --
+$ git init
+Initialized empty Git repository in C:/Users/Owner/version-control/.git/
+
+me --
+$ git init
+Initialized empty Git repository in C:/Users/Owner/version-control/.git/
+
+cbuckey --
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        lesson_1_reflections_prompts.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+me --
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        lesson_1_reflections_prompts.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+
+
+
+
+
+
+
+
